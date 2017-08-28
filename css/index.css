@@ -1,0 +1,441 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  color: #464646;
+  text-decoration: none;
+  outline: none; }
+
+a:hover
+ {
+  color: #39aab1;
+  text-decoration: none;
+  outline: none; }
+
+#head-wrapper {
+  width: 100%;
+  border-bottom: 2px solid #15b4e2;
+  padding-bottom: 20px; }
+  #head-wrapper #top {
+    height: 33px;
+    line-height: 33px;
+    background-color: #f9f9f9; }
+    #head-wrapper #top .top_content {
+      width: 1000px;
+      margin: 0 auto; }
+      #head-wrapper #top .top_content .bar_ul {
+        float: right; }
+        #head-wrapper #top .top_content .bar_ul li {
+          float: left;
+          margin-left: 10px; }
+  #head-wrapper #logo_bar {
+    width: 1000px;
+    margin: 0 auto;
+    height: 100px;
+    position: relative; }
+    #head-wrapper #logo_bar span {
+      position: absolute;
+      bottom: 0;
+      left: 45px; }
+    #head-wrapper #logo_bar .logo {
+      width: 300px;
+      height: 80px;
+      padding-top: 10px;
+      float: left; }
+      #head-wrapper #logo_bar .logo img {
+        width: 80%;
+        height: auto; }
+    #head-wrapper #logo_bar .search {
+      margin-top: 30px;
+      position: absolute;
+      top: 0;
+      right: 240px; }
+      #head-wrapper #logo_bar .search form {
+        width: 450px;
+        height: 36px; }
+        #head-wrapper #logo_bar .search form .key {
+          width: 362px;
+          height: 34px;
+          padding-left: 5px;
+          font-size: 15px;
+          color: #666;
+          border: 2px solid #21bbd2;
+          position: absolute;
+          top: 0;
+          left: 0; }
+        #head-wrapper #logo_bar .search form .btn {
+          width: 75px;
+          height: 38px;
+          background: #46b3b4;
+          cursor: pointer;
+          color: #fff;
+          font-size: 18px;
+          font-family: 微软雅黑;
+          position: absolute;
+          top: -2px;
+          right: 8px; }
+      #head-wrapper #logo_bar .search .hot a {
+        color: rgba(0, 0, 0, 0.49);
+        margin-right: 5px; }
+      #head-wrapper #logo_bar .search .hot a:hover {
+        color: #39aab1;
+        text-decoration: underline;
+        margin-right: 5px; }
+    #head-wrapper #logo_bar .pic {
+      width: 225px;
+      height: 100px;
+      border: 1px solid #ccc;
+      position: absolute;
+      top: 10px;
+      right: 0; }
+  #head-wrapper #login {
+    display: none;
+    position: fixed;
+    background: #fff;
+    z-index: 100000;
+    width: 380px;
+    padding-bottom: 30px;
+    left: 50%;
+    top: 50%;
+    margin: -218px 0 0 -180px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25); }
+    #head-wrapper #login .l-header {
+      position: relative;
+      padding: 0 20px;
+      border-bottom: 1px solid #ccc; }
+      #head-wrapper #login .l-header h1 {
+        font-size: 21px;
+        line-height: 70px;
+        height: 60px; }
+        #head-wrapper #login .l-header h1 span {
+          color: #929292;
+          margin-right: 10px;
+          cursor: pointer; }
+        #head-wrapper #login .l-header h1 .active {
+          color: #03A9F4; }
+      #head-wrapper #login .l-header .close {
+        position: absolute;
+        top: 18px;
+        right: 20px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        color: #0056F1; }
+    #head-wrapper #login .l-body .hide {
+      display: none; }
+    #head-wrapper #login .l-body form {
+      width: 100%; }
+      #head-wrapper #login .l-body form .form-group {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 20px auto;
+        padding-left: 40px; }
+        #head-wrapper #login .l-body form .form-group div .help-block {
+          height: 20px;
+          color: #F50808;
+          margin: 0; }
+        #head-wrapper #login .l-body form .form-group .btn {
+          width: 100%;
+          margin-top: 20px;
+          background-color: #3ACBDD; }
+        #head-wrapper #login .l-body form .form-group span {
+          float: left;
+          margin-top: 5px;
+          color: #39aab1; }
+        #head-wrapper #login .l-body form .form-group a {
+          float: right;
+          margin-top: 5px;
+          color: #39aab1; }
+          #head-wrapper #login .l-body form .form-group a:hover {
+            text-decoration: underline; }
+
+#content-wrapper {
+  margin-top: 20px;
+  width: 100% !important;
+  margin: 0 auto !important;
+  overflow: hidden; }
+  #content-wrapper #main {
+    width: 1200px;
+    margin: 10px auto;
+    padding-top: 10px; }
+    #content-wrapper #main .focus_box {
+      width: 694px;
+      height: 380px;
+      float: left;
+      margin-left: 20px; }
+    #content-wrapper #main .right_new {
+      width: 230px;
+      border: 1px solid #ccc;
+      float: left;
+      margin-left: 20px; }
+      #content-wrapper #main .right_new .book-con {
+        border: 1px solid #46B3B4;
+        padding: 6px 10px; }
+        #content-wrapper #main .right_new .book-con .hd {
+          height: 28px;
+          font-size: 16px;
+          color: #000; }
+        #content-wrapper #main .right_new .book-con .bd ul li {
+          height: 22px;
+          line-height: 22px;
+          overflow: hidden;
+          padding-left: 7px; }
+          #content-wrapper #main .right_new .book-con .bd ul li a {
+            font-family: "Microsoft YaHei",Arial,sans-serif;
+            color: #696969; }
+          #content-wrapper #main .right_new .book-con .bd ul li :hover {
+            color: #2196F3; }
+    #content-wrapper #main .pulishButton a {
+      width: 230px;
+      height: 50px;
+      float: left;
+      margin: 20px 0 0 20px;
+      text-align: center;
+      line-height: 50px;
+      font-size: 16px;
+      background: rgba(37, 191, 191, 0.88);
+      color: #FFFFFF;
+      cursor: pointer; }
+      #content-wrapper #main .pulishButton a:hover {
+        color: #1B629A;
+        background: #25BFBF; }
+    #content-wrapper #main #test_book {
+      width: 694px;
+      float: left;
+      margin-left: 20px; }
+      #content-wrapper #main #test_book .hd {
+        height: 50px;
+        padding: 15px 12px 0;
+        line-height: 39px; }
+        #content-wrapper #main #test_book .hd h3 {
+          font: bold 20px/20px "Microsoft YaHei";
+          float: left;
+          background: url("../img/bugle.jpg") no-repeat left center;
+          padding-left: 20px; }
+      #content-wrapper #main #test_book ul li a {
+        font: bold 16px/25px "Microsoft YaHei";
+        color: #000; }
+      #content-wrapper #main #test_book .tab-content {
+        height: 420px;
+        overflow: hidden; }
+        #content-wrapper #main #test_book .tab-content .tab-pane {
+          width: 694px; }
+          #content-wrapper #main #test_book .tab-content .tab-pane .recommended-book-li {
+            float: left;
+            height: 200px;
+            overflow: hidden;
+            vertical-align: middle;
+            width: 25%;
+            margin: 10px 0 0 0; }
+            #content-wrapper #main #test_book .tab-content .tab-pane .recommended-book-li .pic {
+              width: 183px;
+              height: 120px;
+              text-align: center;
+              position: relative;
+              display: table-cell;
+              vertical-align: middle; }
+              #content-wrapper #main #test_book .tab-content .tab-pane .recommended-book-li .pic .subpic {
+                top: 50%;
+                left: 50%; }
+                #content-wrapper #main #test_book .tab-content .tab-pane .recommended-book-li .pic .subpic a img {
+                  max-width: 100px;
+                  max-height: 100px; }
+            #content-wrapper #main #test_book .tab-content .tab-pane .recommended-book-li .title {
+              padding: 5px 1px 1px;
+              position: relative;
+              width: 66%;
+              margin: 0 auto;
+              height: 32px;
+              line-height: 16px; }
+              #content-wrapper #main #test_book .tab-content .tab-pane .recommended-book-li .title a {
+                font: inherit; }
+            #content-wrapper #main #test_book .tab-content .tab-pane .recommended-book-li .yl-author {
+              width: 66%;
+              margin: 0 auto;
+              color: #999;
+              height: 24px;
+              line-height: 24px;
+              overflow: hidden; }
+            #content-wrapper #main #test_book .tab-content .tab-pane .recommended-book-li .price {
+              padding-top: 3px;
+              width: 66%;
+              margin: 0 auto; }
+              #content-wrapper #main #test_book .tab-content .tab-pane .recommended-book-li .price .price_d {
+                margin-right: 10px; }
+              #content-wrapper #main #test_book .tab-content .tab-pane .recommended-book-li .price .price_m {
+                text-decoration: line-through;
+                color: #9c9c9c;
+                margin-left: 5px; }
+    #content-wrapper #main .block_book {
+      width: 974px;
+      float: left;
+      margin-top: 20px; }
+      #content-wrapper #main .block_book .b-hd {
+        font-size: 18px;
+        height: 30px;
+        line-height: 30px;
+        border-bottom: 2px solid #00BCD4; }
+        #content-wrapper #main .block_book .b-hd h3 {
+          padding-left: 5px;
+          font-weight: bold;
+          letter-spacing: 3px; }
+      #content-wrapper #main .block_book .book-list ul li {
+        float: left;
+        overflow: hidden;
+        padding: 5px 0 0 0;
+        vertical-align: middle;
+        width: 20%;
+        margin: 9px 0; }
+        #content-wrapper #main .block_book .book-list ul li .pic {
+          width: 190px;
+          height: 190px;
+          text-align: center;
+          position: relative;
+          display: table-cell;
+          vertical-align: middle; }
+          #content-wrapper #main .block_book .book-list ul li .pic .subpic {
+            top: 50%;
+            left: 50%; }
+            #content-wrapper #main .block_book .book-list ul li .pic .subpic a img {
+              max-width: 180px;
+              max-height: 180px;
+              vertical-align: top; }
+        #content-wrapper #main .block_book .book-list ul li .name {
+          height: 35px;
+          margin: 0 auto;
+          padding: 0 0 1px;
+          position: relative;
+          width: 66%;
+          line-height: 18px;
+          overflow: hidden; }
+        #content-wrapper #main .block_book .book-list ul li .price {
+          margin: 5px auto 0 auto;
+          width: 66%; }
+          #content-wrapper #main .block_book .book-list ul li .price .price_d {
+            color: #DA0000 !important;
+            font-weight: bold;
+            font-size: 15px; }
+          #content-wrapper #main .block_book .book-list ul li .price .price_m {
+            text-decoration: line-through;
+            color: #9c9c9c !important;
+            margin-left: 5px; }
+
+#footer-wrapper {
+  width: 100%;
+  clear: both;
+  background: #fafafa;
+  border-top: 1px solid #f0f0f0;
+  margin-top: 20px;
+  position: relative;
+  bottom: 0; }
+  #footer-wrapper .wrap {
+    width: 1200px;
+    margin: 0 auto; }
+    #footer-wrapper .wrap .yl-helper {
+      padding: 30px 0;
+      overflow: hidden; }
+      #footer-wrapper .wrap .yl-helper .unit {
+        float: left;
+        width: 25%;
+        border-right: 1px solid #eee;
+        margin-right: -1px; }
+        #footer-wrapper .wrap .yl-helper .unit .unit-wrap {
+          padding: 0 25px;
+          overflow: hidden; }
+          #footer-wrapper .wrap .yl-helper .unit .unit-wrap h4 {
+            margin-bottom: 5px;
+            color: #3e3e3f;
+            font-weight: 700;
+            font-size: 14px; }
+          #footer-wrapper .wrap .yl-helper .unit .unit-wrap li {
+            float: left;
+            width: 50%;
+            height: 21px;
+            line-height: 21px;
+            overflow: hidden; }
+    #footer-wrapper .wrap .web-link {
+      border-top: 2px solid #ebebeb;
+      padding: 14px 0 9px;
+      margin-bottom: 20px;
+      overflow: hidden; }
+      #footer-wrapper .wrap .web-link .web-link-l {
+        float: left;
+        width: 60px;
+        color: #333;
+        line-height: 22px; }
+      #footer-wrapper .wrap .web-link .web-link-r {
+        float: left;
+        overflow: hidden;
+        width: 1120px;
+        line-height: 22px; }
+        #footer-wrapper .wrap .web-link .web-link-r a {
+          padding-right: 4px; }
+  #footer-wrapper .wrap {
+    width: 1200px;
+    margin: 0 auto; }
+    #footer-wrapper .wrap .footer-hd {
+      border-top: 1px solid #e4e4e4;
+      border-bottom: 1px dashed #aaa;
+      padding: 10px 0;
+      overflow: hidden; }
+    #footer-wrapper .wrap .footer-fd {
+      width: 950px;
+      margin: 0 auto;
+      clear: both;
+      overflow: hidden;
+      margin-top: 15px;
+      margin-bottom: 20px; }
+      #footer-wrapper .wrap .footer-fd .footer-fd-c {
+        float: left;
+        text-align: center;
+        width: 690px; }
+        #footer-wrapper .wrap .footer-fd .footer-fd-c .helpMore {
+          clear: both;
+          color: #666; }
+
+#return-top {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  right: 0px;
+  bottom: 170px; }
+  #return-top .block {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    position: relative;
+    border: 1px solid #DFDFDF;
+    border-radius: 3px;
+    cursor: pointer; }
+    #return-top .block span {
+      display: block;
+      position: absolute;
+      bottom: -18px;
+      left: 6px;
+      color: #6A6A6A; }
+    #return-top .block i {
+      position: absolute;
+      top: -8px;
+      left: 17px;
+      color: #00BCD4; }
+  #return-top .wechat-pic {
+    width: 100px;
+    height: 100px;
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    background-image: url(../img/wechat.jpg);
+    border: 1px solid #ccc; }
+  #return-top .wechat {
+    position: relative; }
+
+/*# sourceMappingURL=index.css.map */

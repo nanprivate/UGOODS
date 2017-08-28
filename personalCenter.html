@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UGOODS二手教材</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- 引入 Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- 分类大栏及部分公共样式 -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+<!--		<link rel="stylesheet" href="css/index.css">-->
+		
+		<link rel="stylesheet" type="text/css" href="css/personalCenter.css"/>
+	</head>
+	<body>
+		<!-- 头部大div -->
+		<div id="head-wrapper">
+			<div id="top">
+				<div class="top_content">
+					<span>您好，欢迎光临UGOODS！</span>
+					<ul class="bar_ul">
+						<li>
+							<a href="#" class="login_btn">登录</a>
+						</li>
+						<li>
+							<a href="#" class="signup_btn">免费注册</a>
+						</li>
+						<li>
+							<a href="#">联系我们</a>
+						</li>
+						<li>
+							<a href="#">关于我们</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		
+			<div id="logo_bar">
+				<span>东莞理工学院二手教材网</span>
+				<div class="logo">
+					<a href="#"><img src="img/logo.png"></a>
+				</div>
+				<div class="search">
+					<form action="#" method="get">
+						<input type="text" name="key" class="key" placeholder="书名、作者、ISBN">
+						<input type="submit" class="btn" value="搜索">
+					</form>
+					<div class="hot">
+						<strong>热门搜索：</strong>
+						<a href="#">四六级</a>
+						<a href="#">高等代数</a>
+						<a href="#">java</a>
+						<a href="#">大学物理</a>
+					</div>
+				</div>
+				<div class="pic">
+					<img src="img/right logo.jpg" style="width: 100%;height: 100%;">
+				</div>
+			</div>
+		
+			<div id="login">
+				<div class="l-header">
+					<h1>
+		                  <span class="active login-btn">登录</span>
+		                  <span class="signup-btn">注册</span>
+		               </h1>
+					<i class="iconfontyyy close">&#xe600;</i>
+				</div>
+				<div class="l-body">
+					<form class="form-horizontal" role="form" data-toggle="validator">
+						<div class="form-group login-group">
+							<div class="col-sm-10">
+								<input type="email" class="form-control" id="inputPhone" placeholder="请输入邮箱" data-error="请输入一个有效的邮箱地址！" required>
+								<div class="help-block with-errors"></div>
+							</div>
+							<div class="col-sm-10">
+								<input type="password" class="form-control" id="inputPassword" placeholder="请输入密码">
+							</div>
+							<div class="col-sm-offset-0 col-sm-10">
+								<button type="submit" class="btn btn-default">登录</button>
+								<span>欢迎登录UGOODS</span>
+								<a href="#">忘记密码</a>
+							</div>
+						</div>
+		
+						<div class="form-group signup-group hide">
+							<div class="col-sm-10">
+								<input type="email" class="form-control" id="inputPhone" placeholder="请输入邮箱" data-error="请输入一个有效的邮箱地址！" required>
+								<div class="help-block"></div>
+							</div>
+							<div class="col-sm-10">
+								<input type="password" class="form-control" id="inputPassword" placeholder="请输入密码" required>
+								<div class="help-block"></div>
+							</div>
+							<div class="col-sm-10">
+								<input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="两次输入的密码不匹配！" placeholder="请再输入密码" required>
+								<div class="help-block with-errors"></div>
+							</div>
+							<div class="col-sm-offset-0 col-sm-10">
+								<button type="submit" class="btn btn-default">注册</button>
+							</div>
+						</div>
+		
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- 主要内容div -->
+		<div id="content-wrapper">
+			<div id="main">
+				<div id="left">
+					<div class="user-pic">
+						<div class="pic">
+							<img src="img/pic.jpg"/ style="width: 100%;height: 100%;">
+						</div>
+						<div class="name">
+							zgxxx
+						</div>
+						<div class="news">
+							共0条发布信息
+						</div>
+					</div>
+					<div class="info">
+						<ul>
+							<li><a href="">个人信息</a></li>
+							<li><a href="">我的发布</a></li>
+							<li><a href="">最新消息</a></li>
+							<li><a href="">实名认证</a></li>
+							<li><a href="">意见反馈</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="right">
+					<div class="big-info active">
+						<div class="title">个人信息</div>
+						<div class="inner">
+							<div class="change-pic">
+								<span>头像：</span>
+								<div class="pic">
+									<img class="inner-pic"></img>
+								</div>
+								<div>
+									<button onclick="clickFile()">修改</button>
+									<input type="file" id="sm-pic" onchange="change()"/>
+								</div>
+							</div>
+						<table border="1px solid #ccc" cellspacing="0" cellpadding="0">
+							<tr>
+								<td>用户名：</td>
+								<td><input type="text" value="zgxxx" class="txt"/></td>
+							</tr>
+							<tr>
+								<td>手机号码：</td>
+								<td>136****5244
+									<button>修改</button>
+								</td>
+								
+							</tr>
+							<tr>
+								<td>微信号：</td>
+								<td>
+									<input type="text" value="zgx605313192" class="txt"/>
+								</td>
+							</tr>
+							<tr>
+								<td>所在校区：</td>
+								<td>
+									<select name="xiaoqu" class="txt" style="width:150px ;">
+										<option value="songshanhu" selected="selected">松山湖校区</option>
+										<option value="guancheng">莞城校区</option>
+									</select></td>
+							</tr>		
+							<tr>
+								<td>注册时间：</td>
+								<td>2017-08-06 06:48:41</td>
+								<td><button style="width:150px;height: 40px;border-radius: 5px;">保存修改</button></td>
+							</tr>
+						</table>
+						</div>
+					</div>
+					<div class="big-info">
+						<div class="title">我的发布</div>
+						
+					</div>
+					<div class="big-info">
+						<div class="title">最新消息</div>
+					</div>
+					<div class="big-info">
+						<div class="title">实名认证</div>
+					</div>
+					<div class="big-info">
+						<div class="title">意见反馈</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 底部div -->
+		<div id="footer-wrapper">
+			<div class="wrap">
+				<div class="yl-helper">
+					<div class="unit">
+						<div class="unit-wrap">
+							<h4>消费者保障</h4>
+							<ul>
+								<li>
+									<a href="http://www.youlu.net/userCenter/union/help/?id=38" target="_blank">7天无理由退货</a>
+								</li>
+								<li>
+									<a href="http://www.youlu.net/userCenter/union/help/?id=36" target="_blank">24小时之内发货</a>
+								</li>
+								<li>
+									<a href="/help/" target="_blank">服务中心</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="unit">
+						<div class="unit-wrap">
+							<h4>新手上路</h4>
+							<ul>
+								<li>
+									<a href="http://www.youlu.net/help/list/?code=02" target="_blank">如何买书</a>
+								</li>
+								<li>
+									<a href="http://www.youlu.net/help/list/?code=03" target="_blank">如何支付</a>
+								</li>
+								<li>
+									<a href="http://www.youlu.net/help/list/?code=04" target="_blank">如何退款</a>
+								</li>
+								<li>
+									<a href="http://www.youlu.net/help/list/?code=05" target="_blank">配送说明</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="unit">
+						<div class="unit-wrap">
+							<h4>付款方式</h4>
+							<ul>
+								<li>
+									<a href="http://www.youlu.net/help/view/?id=20" target="_blank">网上支付</a>
+								</li>
+								<li>
+									<a href="http://www.youlu.net/help/view/?id=49" target="_blank">余额支付</a>
+								</li>
+								<li>
+									<a href="http://www.youlu.net/help/view/?id=51" target="_blank">积分支付</a>
+								</li>
+								<li>
+									<a href="http://www.youlu.net/help/view/?id=50" target="_blank">礼券支付</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="unit">
+						<div class="unit-wrap">
+							<h4>个人账户</h4>
+							<ul>
+								<li>
+									<a href="http://www.youlu.net/help/view/?id=1" target="_blank">如何注册</a>
+								</li>
+								<li>
+									<a href="http://www.youlu.net/help/view/?id=2" target="_blank">普通会员与VIP</a>
+								</li>
+								<li>
+									<a href="http://www.youlu.net/help/view/?id=36" target="_blank">会员升级为VIP</a>
+								</li>
+								<li>
+									<a href="http://www.youlu.net/help/view/?id=57" target="_blank">第三方登录</a>
+								</li>
+								<li>
+									<a href="http://www.youlu.net/help/list/?code=07" target="_blank">更多介绍</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="ctl00_WUCBottom2_web_link" class="web-link">
+					<p class="web-link-l">
+						友情链接:</p>
+					<p class="web-link-r">
+						<a href="http://bj.ganji.com/wu/" target="_blank">二手货</a>
+						<a href="http://www.china-pub.com" target="_blank">买书的网站</a>
+						<a href="http://b.qq.com" target="_blank">腾讯企业QQ</a>
+						<a href="http://www.taoke.com/" target="_blank">企业培训</a>
+						<a href="http://www.qqershou.com/" target="_blank">二手网</a>
+						<a href="http://www.kaoyan001.com" target="_blank">中国考研网</a>
+						<a href="http://www.gong123.com" target="_blank">工程资料</a>
+						<a href="http://www.jiangshi.org" target="_blank">中华讲师网</a>
+						<a href="http://sx.offcn.com" target="_blank">山西人事考试网</a>
+						<a href="http://book.examw.com/" target="_blank">考试用书</a>
+						<a href="http://www.7940.com/" target="_blank">违章查询</a>
+						<a href="http://www.ickd.cn" target="_blank">快递查询</a>
+						<a href="http://shop.kongfz.com/" target="_blank">孔夫子旧书网</a>
+						<a href="http://www.xuexi111.com/" target="_blank">资料下载</a>
+						<a href="http://www.baywatch.cn" target="_blank">中文期刊网</a>
+						<a href="http://www.sxzt.org" target="_blank">陕西人事考试网</a>
+						<a href="http://www.798edu.com" target="_blank">中国艺考网</a>
+						<a href="http://hr.yjbys.com" target="_blank">人力资源</a>
+						<a href="http://www.p-learning.com.cn" target="_blank">教程网</a>
+						<a href="http://www.rayedu.com.cn" target="_blank">留学</a>
+						<a href="http://www.100xuexi.com/" target="_blank">圣才学习网</a>
+						<a href="http://www.dayhr.com" target="_blank">理才网</a>
+						<a href="http://www.500d.me" target="_blank">简历模版</a>
+						<a href="http://www.2018.cn/" target="_blank">招生</a>
+						<a href="http://www.ihuigo.com" target="_blank">二手手机回收</a>
+						<a href="http://www.315fangwei.com" target="_blank">防伪码查询</a>
+						<a href="http://www.cn12365.org" target="_blank">产品防伪溯源</a>
+						<a href="http://www.halogo.cn/" target="_blank">拜托啦师傅</a>
+					</p>
+				</div>
+			</div>
+		
+			<div id="return-top">
+				<div class="block wechat">
+					<i class="iconfontyyy">&#xe624;</i>
+					<span>加我微信</span>
+				</div>
+				<div class="wechat-pic">
+				</div>
+				<div class="block fankui">
+					<i class="iconfontyyy">&#xe613;</i>
+					<span>反馈建议</span>
+				</div>
+				<div class="block return">
+					<i class="iconfontyyy">&#xe607;</i>
+					<span>返回顶部</span>
+				</div>
+			</div>
+		
+			<div class="passport-iframe-shadow" style="width: 100%;height: 609px;position: fixed;top: 0px;left: 0px;z-index: 8888;opacity: 0.7;display: none;background-color: rgb(0, 0, 0);"></div>
+		</div>
+	</body>
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<!-- Bootstrap 核心 JavaScript 文件 -->
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/validator.min.js"></script>
+	<!-- 基本页面功能 -->
+	<script type="text/javascript" src="js/basic.js"></script>
+	
+	<script type="text/javascript" src="js/jquery.form.js"></script>
+	
+	<script>
+		$(".info ul li").click(function(e){
+			e.preventDefault();
+			var index = $(this).index();
+			$("#right").children().eq(index).addClass("active").siblings().removeClass("active");
+		})
+		function change(){
+		  var preview = document.querySelector('.inner-pic');
+		  var file    = document.querySelector('#sm-pic').files[0];
+		  var reader  = new FileReader();
+		
+		  reader.addEventListener("load", function () {
+		    preview.src = reader.result;
+		  }, false);
+		
+		  if (file) {
+		    reader.readAsDataURL(file);
+		  }
+		}
+		function clickFile(){
+			$("#sm-pic").click();
+		}
+	</script>
+</html>

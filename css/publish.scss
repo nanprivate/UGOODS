@@ -1,0 +1,135 @@
+#main{
+    margin: 20px auto;
+    width: 1000px;
+//  height: 500px;
+    border:1px solid #ccc;
+    background-color: #EAEAEA;
+    #big-title{
+        background: #46B3B4;
+        font-size: 20px;
+        height: 50px;
+        line-height: 50px;
+        padding-left: 10px;
+    }
+    #table-wrapper{
+        background-color: #EAEAEA;
+//      height: 450px;
+        .upload-pic{
+            overflow: hidden;
+            border-bottom: 1px solid #CCCCCC;
+            height: 200px;
+            text-align: center;
+            position: relative;
+            .box{
+                width: 130px;
+                height: 130px;
+                border-radius: 50%;
+                margin: 20px auto;
+                border:1px solid #CCCCCC;
+                position: relative;
+                display: inline-block;
+                vertical-align: top;
+                #uploadPic{
+                    opacity: 0;
+                    width: 100%;
+                    height: 100%;         
+                    position: relative;
+                    z-index: 99;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+                i{
+                    position: absolute;
+                    top: 35px;
+                    left: 45px;
+                    font-size: 40px;
+                    color: #BFBFBF;
+                     z-index: 1;
+                }
+            }
+            .up-pic {
+                width: 130px;
+                height: 130px;
+                display: inline-block;
+                border:1px solid #ccc;
+                vertical-align: top;
+                margin-top: 20px;
+                position:relative;
+                .icon-delete{
+                    display: block;
+                    content: "";
+                    color: #000000;
+                    font-size: 14px;
+                    position: absolute;
+                    top: -9px;
+                    right: 0;
+                    width: 25px;
+                    height: 25px;
+                    background: url(../img/xx.png);
+                    background-size: 100% 100%;
+                    cursor: pointer;
+                }
+            }
+            span{
+                font-size: 16px;
+                position: absolute;
+                bottom: 10px;
+                left: 440px;
+            }
+        }
+        .table-box{
+            width:100%;
+            margin-top: 30px;
+            text-align: center;
+            .tableItem{
+                width: 100%;
+                margin: 20px auto 10px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                span{
+                    display: block;
+                    width: 100px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    font-size: 16px;
+                }
+                input,textarea,select{
+                    width: 400px;
+                    height: 40px;
+                    border: 1px solid #46B3B4;
+                    border-radius: 8px;
+                    text-indent: 10px;
+                    background-color: rgb(245, 245, 245);
+                    float: left;
+                    outline: none;
+                    font-size: 14px;
+                    &:focus{
+                        background-color:#FFFFFF ;
+                    }
+                }
+                textarea{
+                    width: 400px;
+                    height: 80px;
+                }
+            }
+            button {
+                margin: 20px;
+                border-radius: 5px;
+                width: 150px;
+                height: 40px;
+                font-size: 16px;
+                background-color: #46B3B4;
+                border-radius: 20px;
+                outline: none;
+                color: rgba(255, 255, 255, 0.84);
+                &:hover{
+                    background-color: rgba(70, 179, 180, 0.84);
+                    color: #616161;
+                }
+            }
+        }
+    }
+}

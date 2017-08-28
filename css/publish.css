@@ -1,0 +1,116 @@
+#main {
+  margin: 20px auto;
+  width: 1000px;
+  border: 1px solid #ccc;
+  background-color: #EAEAEA; }
+  #main #big-title {
+    background: #46B3B4;
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 10px; }
+  #main #table-wrapper {
+    background-color: #EAEAEA; }
+    #main #table-wrapper .upload-pic {
+      overflow: hidden;
+      border-bottom: 1px solid #CCCCCC;
+      height: 200px;
+      text-align: center;
+      position: relative; }
+      #main #table-wrapper .upload-pic .box {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        margin: 20px auto;
+        border: 1px solid #CCCCCC;
+        position: relative;
+        display: inline-block;
+        vertical-align: top; }
+        #main #table-wrapper .upload-pic .box #uploadPic {
+          opacity: 0;
+          width: 100%;
+          height: 100%;
+          position: relative;
+          z-index: 99; }
+          #main #table-wrapper .upload-pic .box #uploadPic:hover {
+            cursor: pointer; }
+        #main #table-wrapper .upload-pic .box i {
+          position: absolute;
+          top: 35px;
+          left: 45px;
+          font-size: 40px;
+          color: #BFBFBF;
+          z-index: 1; }
+      #main #table-wrapper .upload-pic .up-pic {
+        width: 130px;
+        height: 130px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        vertical-align: top;
+        margin-top: 20px;
+        position: relative; }
+        #main #table-wrapper .upload-pic .up-pic .icon-delete {
+          display: block;
+          content: "";
+          color: #000000;
+          font-size: 14px;
+          position: absolute;
+          top: -9px;
+          right: 0;
+          width: 25px;
+          height: 25px;
+          background: url(../img/xx.png);
+          background-size: 100% 100%;
+          cursor: pointer; }
+      #main #table-wrapper .upload-pic span {
+        font-size: 16px;
+        position: absolute;
+        bottom: 10px;
+        left: 440px; }
+    #main #table-wrapper .table-box {
+      width: 100%;
+      margin-top: 30px;
+      text-align: center; }
+      #main #table-wrapper .table-box .tableItem {
+        width: 100%;
+        margin: 20px auto 10px;
+        text-align: center;
+        display: flex;
+        justify-content: center; }
+        #main #table-wrapper .table-box .tableItem span {
+          display: block;
+          width: 100px;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          font-size: 16px; }
+        #main #table-wrapper .table-box .tableItem input, #main #table-wrapper .table-box .tableItem textarea, #main #table-wrapper .table-box .tableItem select {
+          width: 400px;
+          height: 40px;
+          border: 1px solid #46B3B4;
+          border-radius: 8px;
+          text-indent: 10px;
+          background-color: whitesmoke;
+          float: left;
+          outline: none;
+          font-size: 14px; }
+          #main #table-wrapper .table-box .tableItem input:focus, #main #table-wrapper .table-box .tableItem textarea:focus, #main #table-wrapper .table-box .tableItem select:focus {
+            background-color: #FFFFFF; }
+        #main #table-wrapper .table-box .tableItem textarea {
+          width: 400px;
+          height: 80px; }
+      #main #table-wrapper .table-box button {
+        margin: 20px;
+        border-radius: 5px;
+        width: 150px;
+        height: 40px;
+        font-size: 16px;
+        background-color: #46B3B4;
+        border-radius: 20px;
+        outline: none;
+        color: rgba(255, 255, 255, 0.84); }
+        #main #table-wrapper .table-box button:hover {
+          background-color: rgba(70, 179, 180, 0.84);
+          color: #616161; }
+
+/*# sourceMappingURL=publish.css.map */
